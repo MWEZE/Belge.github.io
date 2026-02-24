@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Belge Web Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="belge ddd.png" alt="Belge" id="profile-img" style="cursor: pointer;">
+            <p class="logo-text">Hi, I'm Belge, a web developer based in Kigali-Nyanza. I help small businesses build modern and affordable websites.</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <section id="contact-page">
+        <h2>Contact Us</h2>
+        <p class="contact-intro">Get in touch with us for your web development needs. We're here to help!</p>
+        
+        <div class="contact-methods">
+            <a href="https://wa.me/250790916036" class="contact-method whatsapp" target="_blank">
+                <span class="method-icon">💬</span>
+                <h3>WhatsApp</h3>
+                <p>Chat with us instantly</p>
+            </a>
+            <a href="tel:+250790916036" class="contact-method phone">
+                <span class="method-icon">📞</span>
+                <h3>Call Us</h3>
+                <p>+250 790 916 036</p>
+            </a>
+            <a href="mailto:mwezelie29@gmail.com" class="contact-method email">
+                <span class="method-icon">📧</span>
+                <h3>Email</h3>
+                <p>mwezelie29@gmail.com</p>
+                <p>www.linkedin.com/in/mwez-elie-b45b222b4</p>
+            </a>
+        </div>
+
+        <div class="contact-form-container">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <select id="service" name="service" required>
+                        <option value="">Select Service</option>
+                        <option value="starter">Starter Website (120k-180k RWF)</option>
+                        <option value="business">Business Website</option>
+                        <option value="redesign">Website Redesign</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="landing">Landing Page</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="map-container">
+            <h3>Our Location - Kigali-Nyanza, Rwanda</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.76548716655!2d30.058570!3d-1.9440727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xe9b7e68a5cf8b618!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2s!4v1234567890" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Belge Web Services. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
